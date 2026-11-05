@@ -16,12 +16,22 @@
     <link rel="dns-prefetch" href="https://images.unsplash.com" />
 
     <!-- Performance: Preload critical LCP Level Seven sanctuary assets -->
-    <link rel="preload" as="image" href="./assets/aistudio/relax-space-hall.webp" type="image/webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="%BASE_URL%assets/aistudio/relax-space-hall.webp" type="image/webp" fetchpriority="high" />
 
     <!-- Google Fonts: Pinyon Script, Cormorant Garamond, El Messiri -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=El+Messiri:wght@400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet" />
+
+    <!-- GitHub Pages subpath trailing slash normalization -->
+    <script>
+      (function() {
+        var p = window.location.pathname;
+        if (p.length > 1 && !p.endsWith('/') && !p.split('/').pop().includes('.')) {
+          window.location.replace(p + '/' + window.location.search + window.location.hash);
+        }
+      })();
+    </script>
   </head>
   <body class="bg-[#1B0F0A] text-[#F3E9DA] antialiased selection:bg-[#B8924E]/30 selection:text-[#F3E9DA] overflow-x-hidden min-h-screen">
     <div id="root"></div>
