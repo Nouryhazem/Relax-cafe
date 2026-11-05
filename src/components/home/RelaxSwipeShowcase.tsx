@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, Variants } from 'motion/react';
 import { PauseMark } from '../brand/PauseMark';
 import { soundManager } from '../../lib/sound-manager';
+import { getAssetUrl } from '../../lib/assets';
 import { ChevronRight, ChevronLeft, MoveHorizontal, Camera } from 'lucide-react';
 
 interface RelaxSwipeShowcaseProps {
@@ -50,14 +51,14 @@ export const RelaxSwipeShowcase: React.FC<RelaxSwipeShowcaseProps> = ({ isArabic
       metric: 'LEVEL SEVEN · TIMBER CEILING · SAMALOUT',
       images: [
         {
-          webpUrl: '/assets/aistudio/relax-space-hall.webp',
-          pngUrl: '/assets/aistudio/95678FF7-D598-4824-AC80-F39391E0A6EC_d136a697.png',
+          webpUrl: getAssetUrl('assets/aistudio/relax-space-hall.webp'),
+          pngUrl: getAssetUrl('assets/aistudio/95678FF7-D598-4824-AC80-F39391E0A6EC_d136a697.png'),
           captionAr: 'الصالة الرئيسية بالأسقف الخشبية والكراسي المريحة',
           captionEn: 'Main sanctuary hall with timber vaulted roof & plush seating',
         },
         {
-          webpUrl: '/assets/aistudio/relax-work-laptop.webp',
-          pngUrl: '/assets/aistudio/C5866845-2E27-4EE1-B93B-15B61D8EB9F9_7969579e.png',
+          webpUrl: getAssetUrl('assets/aistudio/relax-work-laptop.webp'),
+          pngUrl: getAssetUrl('assets/aistudio/C5866845-2E27-4EE1-B93B-15B61D8EB9F9_7969579e.png'),
           captionAr: 'وقت لنفسك والشغل في هدوء مع فنجان قهوة مضبوط',
           captionEn: 'Personal focus and coffee ritual at your private table',
         },
@@ -77,14 +78,14 @@ export const RelaxSwipeShowcase: React.FC<RelaxSwipeShowcaseProps> = ({ isArabic
       metric: 'ARTISANAL STONE BAR · AMBIENT WARMTH',
       images: [
         {
-          webpUrl: '/assets/aistudio/relax-bar-counter.webp',
-          pngUrl: '/assets/aistudio/814E046E-1873-47EB-B8DB-51B9C574AA5F_82a92bde.png',
+          webpUrl: getAssetUrl('assets/aistudio/relax-bar-counter.webp'),
+          pngUrl: getAssetUrl('assets/aistudio/814E046E-1873-47EB-B8DB-51B9C574AA5F_82a92bde.png'),
           captionAr: 'بار القهوة الحجري وتفاصيل الإضاءة الدافئة',
           captionEn: 'Rustic stone coffee bar and curated warm lighting',
         },
         {
-          webpUrl: '/assets/aistudio/relax-coffee-table.webp',
-          pngUrl: '/assets/aistudio/A4819858-4D3A-4BC6-91CB-984EAD7179B8_50b344ea.png',
+          webpUrl: getAssetUrl('assets/aistudio/relax-coffee-table.webp'),
+          pngUrl: getAssetUrl('assets/aistudio/A4819858-4D3A-4BC6-91CB-984EAD7179B8_50b344ea.png'),
           captionAr: 'فنجان قهوة ريلاكس مع الكوكيز في جو هادئ ومريح',
           captionEn: 'Relax artisan cups & confectionery on polished dark tables',
         },
@@ -104,8 +105,8 @@ export const RelaxSwipeShowcase: React.FC<RelaxSwipeShowcaseProps> = ({ isArabic
       metric: 'PANORAMIC GLASS · ABOVE THE NOISE',
       images: [
         {
-          webpUrl: '/assets/aistudio/relax-level-seven-view.webp',
-          pngUrl: '/assets/aistudio/32CCBBFE-041E-4800-86BD-34171C1C4A26_94ea44b5.png',
+          webpUrl: getAssetUrl('assets/aistudio/relax-level-seven-view.webp'),
+          pngUrl: getAssetUrl('assets/aistudio/32CCBBFE-041E-4800-86BD-34171C1C4A26_94ea44b5.png'),
           captionAr: 'واجهة زجاجية بانورامية وإطلالة هادئة على سمالوط',
           captionEn: 'Floor-to-ceiling glass panoramic perspective over Samalout',
         },

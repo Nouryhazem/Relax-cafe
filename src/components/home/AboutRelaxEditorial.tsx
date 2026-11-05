@@ -4,6 +4,8 @@ import { PauseMark } from '../brand/PauseMark';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { Coffee, Sparkles } from 'lucide-react';
 
+import { getAssetUrl } from '../../lib/assets';
+
 /* -------------------------------------------------------------------------- */
 /* REAL PHOTO CARD: CHAPTER 01 — المكان                                      */
 /* -------------------------------------------------------------------------- */
@@ -11,9 +13,9 @@ const SpacePhotoCard: React.FC = () => {
   return (
     <div className="relative w-full h-[380px] sm:h-[480px] rounded-3xl overflow-hidden bg-[#160B07] border border-[#B8924E]/40 shadow-2xl group">
       <picture className="w-full h-full block">
-        <source srcSet="/assets/aistudio/relax-space-hall.webp" type="image/webp" />
+        <source srcSet={getAssetUrl('assets/aistudio/relax-space-hall.webp')} type="image/webp" />
         <img
-          src="/assets/aistudio/95678FF7-D598-4824-AC80-F39391E0A6EC_d136a697.png"
+          src={getAssetUrl('assets/aistudio/95678FF7-D598-4824-AC80-F39391E0A6EC_d136a697.png')}
           alt="Relax Café Interior Space"
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 block"
         />
@@ -38,9 +40,9 @@ const DetailsPhotoCard: React.FC = () => {
   return (
     <div className="relative w-full h-[380px] sm:h-[480px] rounded-3xl overflow-hidden bg-[#160B07] border border-[#B8924E]/40 shadow-2xl group">
       <picture className="w-full h-full block">
-        <source srcSet="/assets/aistudio/relax-bar-counter.webp" type="image/webp" />
+        <source srcSet={getAssetUrl('assets/aistudio/relax-bar-counter.webp')} type="image/webp" />
         <img
-          src="/assets/aistudio/814E046E-1873-47EB-B8DB-51B9C574AA5F_82a92bde.png"
+          src={getAssetUrl('assets/aistudio/814E046E-1873-47EB-B8DB-51B9C574AA5F_82a92bde.png')}
           alt="Relax Café Details & Artisanal Stone Bar"
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 block"
         />
@@ -65,9 +67,9 @@ const LevelSevenPhotoCard: React.FC = () => {
   return (
     <div className="relative w-full h-[380px] sm:h-[480px] rounded-3xl overflow-hidden bg-[#160B07] border border-[#B8924E]/40 shadow-2xl group">
       <picture className="w-full h-full block">
-        <source srcSet="/assets/aistudio/relax-level-seven-view.webp" type="image/webp" />
+        <source srcSet={getAssetUrl('assets/aistudio/relax-level-seven-view.webp')} type="image/webp" />
         <img
-          src="/assets/aistudio/32CCBBFE-041E-4800-86BD-34171C1C4A26_94ea44b5.png"
+          src={getAssetUrl('assets/aistudio/32CCBBFE-041E-4800-86BD-34171C1C4A26_94ea44b5.png')}
           alt="Relax Café Panoramic Glass View"
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 block"
         />

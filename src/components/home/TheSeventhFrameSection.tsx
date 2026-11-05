@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
 import { PauseMark } from '../brand/PauseMark';
 import { soundManager } from '../../lib/sound-manager';
+import { getAssetUrl } from '../../lib/assets';
 import { motion } from 'motion/react';
 import { ChevronRight, ChevronLeft, MoveHorizontal, Camera, Check } from 'lucide-react';
 
@@ -45,9 +46,9 @@ export const TheSeventhFrameSection: React.FC = () => {
       storyEn:
         'A gathering with friends, quiet personal time, or a break in the middle of a long day. At Relax, you will find a place to unwind in complete comfort.',
       metric: 'TIMBER VAULTED ROOF · LEVEL 07',
-      webpUrl: '/assets/aistudio/relax-space-hall.webp',
-      thumbUrl: '/assets/aistudio/thumb-space-hall.webp',
-      pngUrl: '/assets/aistudio/95678FF7-D598-4824-AC80-F39391E0A6EC_d136a697.png',
+      webpUrl: getAssetUrl('assets/aistudio/relax-space-hall.webp'),
+      thumbUrl: getAssetUrl('assets/aistudio/thumb-space-hall.webp'),
+      pngUrl: getAssetUrl('assets/aistudio/95678FF7-D598-4824-AC80-F39391E0A6EC_d136a697.png'),
       captionAr: 'الصالة الرئيسية بالأسقف الخشبية الدافئة وإضاءة هادئة',
       captionEn: 'Main hall with timber ceilings and gentle lighting',
     },
@@ -65,9 +66,9 @@ export const TheSeventhFrameSection: React.FC = () => {
       storyEn:
         'A gathering with friends, quiet personal time, or a break in the middle of a long day. At Relax, you will find a place to unwind in complete comfort.',
       metric: 'QUIET FOCUS TABLE · ESPRESSO & PAUSE',
-      webpUrl: '/assets/aistudio/relax-work-laptop.webp',
-      thumbUrl: '/assets/aistudio/thumb-work-laptop.webp',
-      pngUrl: '/assets/aistudio/C5866845-2E27-4EE1-B93B-15B61D8EB9F9_7969579e.png',
+      webpUrl: getAssetUrl('assets/aistudio/relax-work-laptop.webp'),
+      thumbUrl: getAssetUrl('assets/aistudio/thumb-work-laptop.webp'),
+      pngUrl: getAssetUrl('assets/aistudio/C5866845-2E27-4EE1-B93B-15B61D8EB9F9_7969579e.png'),
       captionAr: 'مساحة مريحة للتركيز والشغل مع فنجان قهوة وكوكيز',
       captionEn: 'Comfortable work & study corner with artisan coffee',
     },
@@ -85,9 +86,9 @@ export const TheSeventhFrameSection: React.FC = () => {
       storyEn:
         'From warm layered lighting and plush chairs to the crafted textures around you… every corner at Relax holds its own distinct atmosphere.',
       metric: 'HAND-LAID STONE BAR · ILLUMINATED CELLAR',
-      webpUrl: '/assets/aistudio/relax-bar-counter.webp',
-      thumbUrl: '/assets/aistudio/thumb-bar-counter.webp',
-      pngUrl: '/assets/aistudio/814E046E-1873-47EB-B8DB-51B9C574AA5F_82a92bde.png',
+      webpUrl: getAssetUrl('assets/aistudio/relax-bar-counter.webp'),
+      thumbUrl: getAssetUrl('assets/aistudio/thumb-bar-counter.webp'),
+      pngUrl: getAssetUrl('assets/aistudio/814E046E-1873-47EB-B8DB-51B9C574AA5F_82a92bde.png'),
       captionAr: 'بار القهوة الحجري المعماري وتفاصيل الإضاءة الدافئة',
       captionEn: 'Architectural stone coffee bar and ambient illumination',
     },
@@ -105,9 +106,9 @@ export const TheSeventhFrameSection: React.FC = () => {
       storyEn:
         'From warm layered lighting and plush chairs to the crafted textures around you… every corner at Relax holds its own distinct atmosphere.',
       metric: 'ARTISAN ROAST · POLISHED TABLES',
-      webpUrl: '/assets/aistudio/relax-coffee-table.webp',
-      thumbUrl: '/assets/aistudio/thumb-coffee-table.webp',
-      pngUrl: '/assets/aistudio/A4819858-4D3A-4BC6-91CB-984EAD7179B8_50b344ea.png',
+      webpUrl: getAssetUrl('assets/aistudio/relax-coffee-table.webp'),
+      thumbUrl: getAssetUrl('assets/aistudio/thumb-coffee-table.webp'),
+      pngUrl: getAssetUrl('assets/aistudio/A4819858-4D3A-4BC6-91CB-984EAD7179B8_50b344ea.png'),
       captionAr: 'كوب القهوة المطبوع بشعار Relax والجلسات الوثيرة',
       captionEn: 'Signature Relax branded cups on polished coffee tables',
     },
@@ -125,9 +126,9 @@ export const TheSeventhFrameSection: React.FC = () => {
       storyEn:
         'On Level Seven, elevated above the bustling street, you can slow down and savor your time, whether staying for hours or grabbing a quick brew.',
       metric: 'FLOOR-TO-CEILING GLASS · 24.5M HIGH',
-      webpUrl: '/assets/aistudio/relax-level-seven-view.webp',
-      thumbUrl: '/assets/aistudio/thumb-level-seven-view.webp',
-      pngUrl: '/assets/aistudio/32CCBBFE-041E-4800-86BD-34171C1C4A26_94ea44b5.png',
+      webpUrl: getAssetUrl('assets/aistudio/relax-level-seven-view.webp'),
+      thumbUrl: getAssetUrl('assets/aistudio/thumb-level-seven-view.webp'),
+      pngUrl: getAssetUrl('assets/aistudio/32CCBBFE-041E-4800-86BD-34171C1C4A26_94ea44b5.png'),
       captionAr: 'واجهة زجاجية كاملة تكشف أضواء المدينة في هدوء تام',
       captionEn: 'Panoramic glass facade looking over city lights in serenity',
     },
