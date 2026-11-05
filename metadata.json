@@ -1,0 +1,6 @@
+{
+  "name": "Relax Café · Level Seven",
+  "description": "فوق الزحمة — الموقع الرسمي لريلاكس كافيه في سمالوط، المنيا (الدور السابع). استكشف المنيو، اختر مشروبك على مزاجك، وقسّم حساب القعدة بدقة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+@theme {
+  --color-espresso: #1B0F0A;
+  --color-chestnut: #3B1F14;
+  --color-ivory: #F3E9DA;
+  --color-brass: #B8924E;
+  --color-sage: #5C6650;
+
+  --font-pinyon: "Pinyon Script", cursive;
+  --font-cormorant: "Cormorant Garamond", Georgia, serif;
+  --font-messiri: "El Messiri", -apple-system, "Segoe UI", sans-serif;
+}
+
+:root {
+  --color-espresso-shadow: #1B0F0A;
+  --color-chestnut-brown: #3B1F14;
+  --color-warm-ivory: #F3E9DA;
+  --color-aged-brass: #B8924E;
+  --color-sage-reserve: #5C6650;
+}
+
+body {
+  font-family: "El Messiri", -apple-system, sans-serif;
+  background-color: #1B0F0A;
+  color: #F3E9DA;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[lang="en"] body, [lang="en"] .font-editorial {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.font-pinyon {
+  font-family: "Pinyon Script", cursive;
+}
+
+.font-cormorant {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+.font-messiri {
+  font-family: "El Messiri", -apple-system, "Segoe UI", sans-serif;
+}
+
+/* Subdued custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1B0F0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #3B1F14;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8924E;
+}
+
+/* Subtle pattern for chestnut paper */
+.bg-chestnut-pattern {
+  background-color: #3B1F14;
+  background-image: radial-gradient(rgba(184, 146, 78, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Atmospheric Steam and Dust Drift */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0px) scale(0.95);
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+  100% {
+    transform: translateY(-80px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+.animate-steam {
+  animation: floatUp 5s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
+
+/* Brass Shimmer Bar */
+@keyframes brassShine {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.brass-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(184, 146, 78, 0) 0%,
+    rgba(243, 233, 218, 0.4) 50%,
+    rgba(184, 146, 78, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: brassShine 3.5s infinite linear;
+}
+
+/* Mobile Tactile Lift and Card Depth */
+.touch-lift-card {
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+  will-change: transform, box-shadow;
+}
+
+.touch-lift-card:active {
+  transform: translateY(-5px) scale(1.015);
+  box-shadow: 0 18px 36px -8px rgba(184, 146, 78, 0.3), 0 8px 16px -4px rgba(27, 15, 10, 0.9);
+  border-color: rgba(184, 146, 78, 0.7);
+}
+
+/* Subtle print styles for split receipt */
+@media print {
+  body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
+
