@@ -17,6 +17,10 @@ const SpacePhotoCard: React.FC = () => {
         <img
           src={getAssetUrl('assets/aistudio/95678FF7-D598-4824-AC80-F39391E0A6EC_d136a697.png')}
           alt="Relax Café Interior Space"
+          width="800"
+          height="480"
+          loading="eager"
+          decoding="async"
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 block"
         />
       </picture>
@@ -44,6 +48,10 @@ const DetailsPhotoCard: React.FC = () => {
         <img
           src={getAssetUrl('assets/aistudio/814E046E-1873-47EB-B8DB-51B9C574AA5F_82a92bde.png')}
           alt="Relax Café Details & Artisanal Stone Bar"
+          width="800"
+          height="480"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 block"
         />
       </picture>
@@ -71,6 +79,10 @@ const LevelSevenPhotoCard: React.FC = () => {
         <img
           src={getAssetUrl('assets/aistudio/32CCBBFE-041E-4800-86BD-34171C1C4A26_94ea44b5.png')}
           alt="Relax Café Panoramic Glass View"
+          width="800"
+          height="480"
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 block"
         />
       </picture>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#1B0F0A" />
+  <circle cx="32" cy="32" r="28" stroke="#B8924E" stroke-width="1.5" stroke-opacity="0.4" />
+  <!-- Stylized Roman VII / Relax Pause Mark -->
+  <path d="M22 20V44" stroke="#B8924E" stroke-width="3.5" stroke-linecap="round" />
+  <path d="M28 20V44" stroke="#B8924E" stroke-width="3.5" stroke-linecap="round" />
+  <path d="M36 20L42 44L48 20" stroke="#F3E9DA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

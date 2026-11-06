@@ -27,6 +27,30 @@ export const Footer: React.FC = () => {
                 ? 'ريلاكس كافيه — سمالوط، المنيا. ملاذ هادئ في الدور السابع، يُصعد إليه بالأسانسير للاستمتاع بوقت نوعي وخصوصية تامة بعيداً عن صخب الشارع.'
                 : 'Relax Café — Samalout, Minya. An enclosed seventh-floor sanctuary accessed by elevator, designed for slow moments and unhurried hospitality.'}
             </p>
+
+            {/* Official Social Media Channels */}
+            <div className="flex items-center justify-center md:justify-start gap-2 pt-1">
+              <a
+                href="https://www.facebook.com/share/1bkvKw7kAK/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#3B1F14]/70 hover:bg-[#B8924E] border border-[#B8924E]/30 text-xs text-[#F3E9DA] hover:text-[#1B0F0A] transition-all group"
+                aria-label="Relax Café on Facebook"
+              >
+                <Facebook className="w-3.5 h-3.5 text-[#B8924E] group-hover:text-[#1B0F0A] transition-colors" />
+                <span className="font-medium">Facebook</span>
+              </a>
+              <a
+                href="https://www.instagram.com/relax________cafe?dlrf=MXFobTliYmFnNW82ZQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#3B1F14]/70 hover:bg-[#B8924E] border border-[#B8924E]/30 text-xs text-[#F3E9DA] hover:text-[#1B0F0A] transition-all group"
+                aria-label="Relax Café on Instagram"
+              >
+                <Instagram className="w-3.5 h-3.5 text-[#B8924E] group-hover:text-[#1B0F0A] transition-colors" />
+                <span className="font-medium">Instagram</span>
+              </a>
+            </div>
           </div>
 
           {/* Quick Experience Links (3 cols) */}
@@ -103,7 +127,27 @@ export const Footer: React.FC = () => {
               </a>
             </div>
 
-            <div className="pt-2 flex items-center justify-center md:justify-start gap-3">
+            <div className="pt-2 flex items-center justify-center md:justify-start gap-2.5">
+              <a
+                href="https://www.facebook.com/share/1bkvKw7kAK/?mibextid=wwXIfr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded bg-[#3B1F14] hover:bg-[#B8924E] text-[#F3E9DA] hover:text-[#1B0F0A] transition-colors"
+                aria-label="Facebook"
+                title="Facebook"
+              >
+                <Facebook className="w-3.5 h-3.5" />
+              </a>
+              <a
+                href="https://www.instagram.com/relax________cafe?dlrf=MXFobTliYmFnNW82ZQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 rounded bg-[#3B1F14] hover:bg-[#B8924E] text-[#F3E9DA] hover:text-[#1B0F0A] transition-colors"
+                aria-label="Instagram"
+                title="Instagram"
+              >
+                <Instagram className="w-3.5 h-3.5" />
+              </a>
               <a
                 href="https://wa.me/201111727490"
                 target="_blank"
@@ -132,13 +176,31 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Bottom Hairline & Legal */}
-        <div className="pt-8 border-t border-[#3B1F14]/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#F3E9DA]/50">
+        {/* Bottom Hairline & Legal with Creator Credit */}
+        <div className="pt-8 border-t border-[#3B1F14]/60 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#F3E9DA]/60">
           <div className="flex items-center gap-2">
             <PauseMark size="sm" color="#B8924E" />
             <span>Relax Café · Level Seven · Samalout, Minya</span>
           </div>
-          <span>{isArabic ? '«فوق الزحمة، وقتك بيرجع ليك.» جميع الحقوق محفوظة.' : 'All rights reserved.'}</span>
+
+          {/* Made by Noury Hazem */}
+          <div className="flex items-center gap-1.5 text-xs text-[#F3E9DA]/80">
+            <span className="text-[#F3E9DA]/60">{isArabic ? 'صُنع بواسطة' : 'Made by'}</span>
+            <a
+              href="https://www.instagram.com/nouryhazem?mdxt=a2oyZzg3YnVkd2Qw&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 font-medium text-[#B8924E] hover:text-[#F3E9DA] transition-colors px-2 py-0.5 rounded bg-[#3B1F14]/50 border border-[#B8924E]/20 hover:border-[#B8924E]"
+              title="Noury Hazem on Instagram"
+            >
+              <Instagram className="w-3 h-3 text-[#B8924E]" />
+              <span className="tracking-wide">Noury Hazem</span>
+            </a>
+          </div>
+
+          <span className="text-[11px] text-[#F3E9DA]/50">
+            {isArabic ? '«فوق الزحمة، وقتك بيرجع ليك.» جميع الحقوق محفوظة.' : 'All rights reserved.'}
+          </span>
         </div>
       </div>
     </footer>

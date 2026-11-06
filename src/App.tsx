@@ -10,6 +10,7 @@ import { Footer } from './components/navigation/Footer';
 import { PageTransition } from './components/motion/PageTransition';
 import { ElevatorScrollIndicator } from './components/motion/ElevatorScrollIndicator';
 import { AmbientScrollCanvas } from './components/motion/AmbientScrollCanvas';
+import { ErrorBoundary } from './components/common/ErrorBoundary';
 
 const AppContent: React.FC = () => {
   const { section, toastMessage } = useApp();
@@ -62,8 +63,10 @@ const AppContent: React.FC = () => {
 
 export default function App() {
   return (
-    <AppProvider>
-      <AppContent />
-    </AppProvider>
+    <ErrorBoundary>
+      <AppProvider>
+        <AppContent />
+      </AppProvider>
+    </ErrorBoundary>
   );
 }

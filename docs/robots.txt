@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nouryhazem.github.io/Relax-cafe/sitemap.xml

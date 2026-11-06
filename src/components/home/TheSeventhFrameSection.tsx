@@ -276,6 +276,8 @@ export const TheSeventhFrameSection: React.FC = () => {
                 <img
                   src={currentPhoto.webpUrl}
                   alt={currentPhoto.titleAr}
+                  width={700}
+                  height={480}
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-104 block"
                   loading="eager"
                   decoding="async"
